@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function validatePasswords() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("cpassword").value;
+        
+          if (password !== confirmPassword) {
+            document.getElementById("cpassword").setCustomValidity("The passwords do not match.");
+            return false;
+          } else {
+            document.getElementById("cpassword").setCustomValidity("");
+            return true;
+          }
+        }
+        
+        document.addEventListener("submit", function(event) {
+          if (!validatePasswords()) {
+            event.preventDefault();
+          }
+        });
+        </script>
+
+</head>
+<body>
+    <header style="width:100%">
+        <nav style="width:100%">
+            <ul type="none">
+                <li class="left-nav">Library System</li>
+                <li class="right-nav">Log Out</li>
+                <li class="right-nav">Contact Us</li>
+                <li class="right-nav"><a href="#Register">Register</a></li>
+                <li class="right-nav"><a href="#Books">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div1" id="Books">
+            <h1>Books</h1>
+        <table >
+            <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a href="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling/dp/1408855658/ref=sr_1_1?crid=33PQ7FL7ARQGB&keywords=Harry+Potter+and+the+Philosopher%E2%80%99s+Stone&qid=1687605296&s=books&sprefix=harry+potter+and+the+philosopher+s+stone%2Cstripbooks%2C411&sr=1-1">Harry Potter and the Philosopher’s Stone</a>
+                    <table>
+                       <tr><td>Publication Date: 1997</td></tr>
+                       <tr> <td>Page Count: 309</td></tr>
+                       <tr><td> ISBN: 1338878921</td></tr> 
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy Drama</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a href="https://www.amazon.in/Harry-Potter-Chamber-Secrets/dp/1408855666/ref=sr_1_2?crid=1U0BWLCBSMP1Q&keywords=Harry+Potter+and+the+Chamber+of+Secrets&qid=1687605264&s=books&sprefix=harry+potter+and+the+chamber+of+secrets%2Cstripbooks%2C212&sr=1-2">Harry Potter and the Chamber of Secrets</a>
+                    <table>
+                       <tr><td>Publication Date: 1998</td></tr>
+                       <tr> <td>Page Count: 384</td></tr>
+                       <tr><td> ISBN: 1408855666</td></tr> 
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy Drama</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a href="https://www.amazon.in/Harry-Potter-Prisoner-Azkaban/dp/1408855674">Harry Potter and the Prisoner of Azkaban</a>
+                    <table>
+                       <tr><td>Publication Date: 1999</td></tr>
+                       <tr> <td>Page Count: 480</td></tr>
+                       <tr><td> ISBN: 1408855674</td></tr> 
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy Drama</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <a href="https://www.amazon.in/Harry-Potter-Goblet-Fire/dp/1408855682/ref=sr_1_1?crid=25O177HXC950Y&keywords=Harry+Potter+and+the+Goblet+of+Fire&qid=1687600656&s=books&sprefix=harry+potter+and+the+goblet+of+fire%2Cstripbooks%2C214&sr=1-1">Harry Potter and the Goblet of Fire</a>
+                    <table>
+                       <tr><td>Publication Date: 2000</td></tr>
+                       <tr> <td>Page Count: 640</td></tr>
+                       <tr><td> ISBN: 1408855682</td></tr> 
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy Drama</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <a href="https://www.amazon.in/Harry-Potter-Order-Phoenix/dp/1408855690/ref=sr_1_1?crid=3PBYAL9MULE96&keywords=Harry+Potter+and+the+Order+of+the+Phoenix&qid=1687600733&s=books&sprefix=harry+potter+and+the+order+of+the+phoenix%2Cstripbooks%2C495&sr=1-1">Harry Potter and the Order of the Phoenix</a>
+                    <table>
+                       <tr><td>Publication Date: 2003</td></tr>
+                       <tr> <td>Page Count: 816</td></tr>
+                       <tr><td> ISBN: 9781408855690</td></tr> 
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy Drama</td>
+                <td>Available</td>
+            </tr>
+        
+        </tbody>
+        </table>
+        </div>
+
+
+        <div class="div2">
+        <form id="Register" action="/submit" method="post">
+            <h1>Register</h1>
+            <label for="fname">First Name:</label><br>
+		    <input type="text" required id="fname"><br>
+
+            <label for="lname">Last Name:</label><br>
+		    <input type="text" required id="lname"><br>
+
+            <label for="dob">Date Of Birth:</label><br>
+		    <input type="date" required id="dob"><br>
+
+            <label for ="age">Age:</label><br>
+			<input required type="number" id="age" min="5" max="100"><br>
+
+            <label for="email">Email:</label><br>
+		    <input type="email" required id="email"><br>
+
+            <label for ="password">Password:</label><br>
+		    <input type="password" required id="password"><br>
+
+            <label for ="cpassword">Confirm Password:</label><br>
+		    <input type="password" required id="cpassword"><br>
+
+            <button type="submit">Register</button>
+        </form>
+        </div>
+    </main>
+</body>
+</html>

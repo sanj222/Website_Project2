@@ -1,0 +1,127 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color:#E3D18A;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav {
+    background-color:#876445;
+    color:#EEC373;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .left-nav {
+    float: left;
+  }
+  
+  .right-nav {
+    float: right;
+  }
+  
+  li{
+    color:#EEC373;
+    text-decoration: none;
+    padding-right: 17px;
+    padding-bottom: 12px;
+    font-size: 17px;
+  }
+  li a{
+    color:#EEC373;
+    text-decoration: none;
+  }
+  li:hover{
+    color:blue;
+  }
+
+ a:hover{
+    color:blue;
+  }
+
+  h1{
+    padding-top: 30px;
+  }
+  .div1{
+    color:#876445;
+    background-color:#f3e4a7;
+    margin: 0 auto;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width:770px;
+    margin-top: 75px;
+    padding-bottom: 25px;
+  }
+  .div2{
+    color:#876445;
+    background-color:#f3e4a7;
+    margin: 0 auto;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width:770px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 1px solid #876445;
+    padding: 10px;
+    border-spacing: 3px;
+  }
+  
+  th, td {
+    border-left: 1px solid #876445;
+    border-bottom: 1px solid #876445;
+    padding: 10px;
+    border-spacing: 3px;
+  }
+
+  input{
+    width: 90%;
+    height: 5px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #876445;
+    background:#f5e0ce;
+  }
+
+  input:hover{
+    border:1px solid blue;
+  }
+  label{
+    font-weight: 500;
+  }
+  
+  button {
+    color:#f5e0ce;
+    background-color:#876445;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 1px solid #876445;
+    cursor: pointer;
+    width: 95%;
+    opacity: 0.9;
+    font-size: 18px;
+  }
+
+  button:hover{
+    border:1px solid blue;
+  }
